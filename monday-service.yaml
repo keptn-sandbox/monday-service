@@ -1,0 +1,42 @@
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: monday-service
+  namespace: keptn
+spec:
+  selector:
+    matchLabels:
+      run: monday-service
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        run: monday-service
+    spec:
+      containers:
+      - name: monday-service
+        image: adamgardnerdt/keptn-monday-service
+        ports:
+        - containerPort: 80
+        env:
+        - name: MONDAY_API_KEY
+          value: "***"
+        - name: MONDAY_BOARD_ID
+          value: "***"
+        - name: MONDAY_GROUP_NAME
+          value: "***"
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: monday-service
+  namespace: keptn
+  labels:
+    run: monday-service
+spec:
+  ports:
+  - port: 80
+    protocol: TCP
+  selector:
+    run: monday-service
