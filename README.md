@@ -23,6 +23,8 @@ You'll need the following info from your Monday.com account.
 
 ## Deploy Service onto Keptn
 
+> :warning: It is HIGHLY recommended that you store these variables as k8s secrets, NOT in plain text.
+
 1. Clone this repo onto the keptn machine.
 2. Adjust the `MONDAY_API_KEY`, `MONDAY_BOARD_ID` and `MONDAY_GROUP_NAME` values in `monday-service.yaml` to reflect your values.
 3. Use kubectl to apply both the `monday-service.yaml` and `monday-distributor.yaml` files on the keptn cluster:
