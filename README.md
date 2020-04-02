@@ -11,13 +11,13 @@ This keptn service creates items on [Monday.com](https://monday.com) boards when
 
 You'll need the following info from your Monday.com account.
 
-1. Your API key for Monday.com. Login and click the username circle. Go to account > admin and generate an API token.
+1. Your **API key** for Monday.com. Login and click the username circle. Go to account > admin and generate an API token.
 
 ![keptn monday service](assets/keptn-monday-service2.png)
 
-2. The Board ID on which you want the results to appear. You can get this from the URL.
+2. The **Board ID** on which you want the results to appear. You can get this from the URL.
 
-3. The title of the 'group' under which you want the results to appear (eg. "Things to do")
+3. The **title text of the 'group'** under which you want the results to appear (eg. "Things to do")
 
 ![keptn monday service](assets/keptn-monday-service3.png)
 
