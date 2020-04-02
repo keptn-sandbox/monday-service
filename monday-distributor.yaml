@@ -1,7 +1,7 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: monday-service-deployment-distributor
+  name: monday-service-distributor
   namespace: keptn
 spec:
   selector:
