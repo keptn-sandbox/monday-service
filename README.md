@@ -37,7 +37,7 @@ Expected output:
 ```
 deployment.apps/monday-service created
 service/monday-service created
-deployment.apps/monday-service-deployment-distributor created
+deployment.apps/monday-service-distributor created
 ```
 
 # Verification of Installation
@@ -49,7 +49,7 @@ Expected output:
 
 ```
 monday-service-*-*                                 1/1     Running   0          12s
-monday-service-deployment-distributor-*-*          1/1     Running   0          12s
+monday-service-distributor-*-*          1/1     Running   0          12s
 ```
 
 Now start an evaluation and wait for the ticket to be created.
