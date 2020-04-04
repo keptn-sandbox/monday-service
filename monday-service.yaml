@@ -21,11 +21,20 @@ spec:
         - containerPort: 80
         env:
         - name: MONDAY_API_KEY
-          value: "***"
+          valueFrom:
+            secretKeyRef:
+              name: monday-details
+              key: api-key
         - name: MONDAY_BOARD_ID
-          value: "***"
+          valueFrom:
+            secretKeyRef:
+              name: monday-details
+              key: board-id
         - name: MONDAY_GROUP_NAME
-          value: "***"
+          valueFrom:
+            secretKeyRef:
+              name: monday-details
+              key: group-name
 ---
 apiVersion: v1
 kind: Service
