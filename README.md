@@ -1,4 +1,9 @@
 # Monday.com Service
+
+> :warning: DEPRECATION WARNING: This service is now deprecated and will not receive any updates. It is recommended that you use the Monday.com integration instructions [here](https://keptn.sh/docs/integrations) (search for `monday.com`).
+> 
+> The new integration (linked above) uses the Keptn webhook service and as such, is far more flexible as you can subscribe to any Keptn event.
+
 This keptn service creates items on [Monday.com](https://monday.com) boards when a keptn evaluation (`sh.keptn.event.start-evaluation`) is performed. The service subscribes to the following keptn events:
 
 * `sh.keptn.events.evaluation-done`
