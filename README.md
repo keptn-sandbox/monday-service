@@ -5,6 +5,8 @@
 > The new integration (linked above) uses the Keptn webhook service and as such, is far more flexible as you can subscribe to any Keptn event.
 >
 > Questions should be directed to [Keptn slack](https://slack.keptn.sh/)
+>
+> Alternatively, if you are Kubernetes-native, I suggest using the [Keptn Lifecycle Toolkit](https://lifecycle.keptn.sh) instead.
 
 This keptn service creates items on [Monday.com](https://monday.com) boards when a keptn evaluation (`sh.keptn.event.start-evaluation`) is performed. The service subscribes to the following keptn events:
 
